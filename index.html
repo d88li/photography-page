@@ -186,6 +186,17 @@
         </div>
       </div>
       
+      <div class="w3-display-container mySlides">
+        <img src="001223740021.jpg" style="width:100%" alt="kids playing in a courtyard">
+        <div class="caption">
+          <h2>
+            Photography
+          </h2>
+          My photography aims to capture the stories hidden in the scenery of urban life, through the timeless medium of 35mm film. Film’s unique “one-shot” nature gives scenes a candor and honesty that is difficult to replicate through digital means. 
+        </div>
+      </div>
+      
+      
       <button class="btn" onclick="plusDivs(-1)">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
           <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
@@ -203,5 +214,27 @@
       <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;     </button>
 -->
     </div>
+    
+    
+    
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+  </script>
   </body>
 </html>
