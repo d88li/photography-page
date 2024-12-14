@@ -3,6 +3,25 @@
   <head>
     <title>Assignment 3: contact page</title>
     <!--created by Derica Li-->
+    
+    <!--
+    Citation: 1
+    Code copied from: [https://heroicons.com/]
+    Author: [heroicons]
+    Name: [SVG icon]
+    Description: [arrow-left and arrow-right icon]
+    Date retrieved: [Dec 13 2024]
+    -->
+    
+    <!--
+    Citation: 2
+    Code copied from: [https://www.w3schools.com/w3css/w3css_slideshow.asp]
+    Author: [W3 schools]
+    Name: [Manual Slideshow]
+    Description: [Code included html div formatting and javascript to create slide show effect, I did not use the css styling they provided]
+    Date retrieved: [Dec 13 2024]
+    -->
+    
     <meta charset="utf-8">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -175,7 +194,7 @@
     </div>
     
     <div class="content">
-      
+      <!-- Manual slideshow: Citation 2 at the top of the file -->
       <div class="w3-display-container mySlides">
         <img src="IMG_1688.jpg" style="width:100%" alt="two people by the beach">
         <div class="caption">
@@ -186,6 +205,7 @@
         </div>
       </div>
       
+      <!-- Manual slideshow: Citation 2 at the top of the file -->
       <div class="w3-display-container mySlides">
         <img src="001223740021.jpg" style="width:100%" alt="kids playing in a courtyard">
         <div class="caption">
@@ -196,6 +216,7 @@
         </div>
       </div>
       
+      <!-- Manual slideshow: Citation 2 at the top of the file -->
       <div class="w3-display-container mySlides">
         <img src="001223740031.jpg" style="width:100%" alt="shadowy bed">
         <div class="caption">
@@ -206,6 +227,7 @@
         </div>
       </div>
       
+      <!-- Manual slideshow: Citation 2 at the top of the file -->
       <div class="w3-display-container mySlides">
         <img src="IMG_1649.JPG" style="width:100%" alt="museum at golden hour">
         <div class="caption">
@@ -216,6 +238,7 @@
         </div>
       </div>
       
+      <!-- Manual slideshow: Citation 2 at the top of the file -->
       <div class="w3-display-container mySlides">
         <img src="001223710023.jpg" style="width:100%" alt="convenience store at night">
         <div class="caption">
@@ -225,7 +248,8 @@
           My photography aims to capture the stories hidden in the scenery of urban life, through the timeless medium of 35mm film. Film’s unique “one-shot” nature gives scenes a candor and honesty that is difficult to replicate through digital means. 
         </div>
       </div>
-  
+      
+      <!-- Manual slideshow: Citation 2 at the top of the file -->
       <div class="w3-display-container mySlides">
         <img src="IMG_1694.JPG" style="width:100%" alt="barbies on grass">
         <div class="caption">
@@ -236,6 +260,7 @@
         </div>
       </div>
       
+      <!-- Manual slideshow: Citation 2 at the top of the file -->
       <div class="w3-display-container mySlides">
         <img src="001223740009.jpg" style="width:100%" alt="workers on lunch break">
         <div class="caption">
@@ -246,6 +271,7 @@
         </div>
       </div>
       
+      <!-- Manual slideshow: Citation 2 at the top of the file -->
       <div class="w3-display-container mySlides">
         <img src="IMG_1686.JPG" style="width:100%" alt="bicycle by the beach">
         <div class="caption">
@@ -256,7 +282,7 @@
         </div>
       </div>
 
-      
+      <!-- Manual slideshow: Citation 2 at the top of the file -->
       <div class="w3-display-container mySlides">
         <img src="001223710003.jpg" style="width:100%" alt="public park with green pond">
         <div class="caption">
@@ -267,6 +293,7 @@
         </div>
       </div>
       
+      <!-- Manual slideshow: Citation 2 at the top of the file -->
       <div class="w3-display-container mySlides">
         <img src="IMG_1684.JPG" style="width:100%" alt="grandpas by the carousel">
         <div class="caption">
@@ -277,44 +304,43 @@
         </div>
       </div>
       
+      <!-- Manual slideshow: Citation 2 at the top of the file -->
       <button class="btn" onclick="plusDivs(-1)">
+        <!-- SVG Icon: Citation 1 at the top of the file-->
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
           <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
         </svg>
       </button>
       
+      <!-- Manual slideshow: Citation 2 at the top of the file -->
       <button class="btn" onclick="plusDivs(1)">
+        <!-- SVG Icon: Citation 1 at the top of the file-->
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
           <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
         </svg>
       </button>
-      
-      <!--
-      <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094; </button>
-      <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;     </button>
--->
     </div>
     
     
-    
-    <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
+    <!-- Manual slideshow: Citation 2 at the top of the file -->
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
 
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
-      }
-
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-           x[i].style.display = "none";  
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
         }
-        x[slideIndex-1].style.display = "block";  
-      }
-  </script>
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+    </script>
   </body>
 </html>
